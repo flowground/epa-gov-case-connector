@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "output": {
+                    "description": "Output Format Flag.  Enter one of the following keywords:\n- CSV = Facility results formatted as comma delimited file download (default).",
+                    "type": "string"
+                },
+                "qid": {
+                    "description": "Query ID Selector.  Enter the QueryID number from a previously run query.",
+                    "type": "string"
+                },
+                "qcolumns": {
+                    "description": "Used to customize service output.  A list of comma-separated column IDs of output objects that will be returned in the service query object or download.  Use the metadata service endpoint for a complete list of Ids and definitions.",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

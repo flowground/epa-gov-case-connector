@@ -1,0 +1,48 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "output": {
+                    "description": "Output Format Flag.  Enter one of the following keywords:\n- JSON = Data model formatted as Javascript Object Notation (default).\n- JSONP = Data model formatted as Javascript Object Notation with Padding.  \n- XML = Data model formatted as Extensible Markup Language.",
+                    "type": "string",
+                    "enum": [
+                        "JSONP",
+                        "JSON",
+                        "XML"
+                    ]
+                },
+                "qid": {
+                    "description": "Query ID Selector.  Enter the QueryID number from a previously run query.",
+                    "type": "string"
+                },
+                "pageno": {
+                    "description": "Indicates the number of the page to display. It is used only when the results are paginated.",
+                    "type": "number",
+                    "default": 1
+                },
+                "callback": {
+                    "description": "JSONP Callback.  For use with JSONP and GEOJSONP output only.  Enter a name of the function in which to wrap the JSON response.",
+                    "type": "string"
+                },
+                "newsort": {
+                    "description": "Output Sort Column.  Enter the number of the column on which the data will be sorted. If unpopulated results will sort on the first column.",
+                    "type": "number"
+                },
+                "descending": {
+                    "description": "Output Sort Column Descending Flag.  Enter Y to column identified in the newsort parameter descending.  Enter N to use ascending sort order. Used only when newsort parameter is populated.",
+                    "type": "string",
+                    "enum": [
+                        "Y",
+                        "N"
+                    ]
+                },
+                "qcolumns": {
+                    "description": "Used to customize service output.  A list of comma-separated column IDs of output objects that will be returned in the service query object or download.  Use the metadata service endpoint for a complete list of Ids and definitions.",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

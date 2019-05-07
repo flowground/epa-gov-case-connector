@@ -1,0 +1,27 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "p_id": {
+                    "description": "Case Number. Enter the case number identifier to retrieve the case report.",
+                    "type": "string"
+                },
+                "output": {
+                    "description": "Output Format Flag.  Enter one of the following keywords:\n- JSON = Data model formatted as Javascript Object Notation (default).\n- JSONP = Data model formatted as Javascript Object Notation with Padding.  \n- XML = Data model formatted as Extensible Markup Language.",
+                    "type": "string",
+                    "enum": [
+                        "JSONP",
+                        "JSON",
+                        "XML"
+                    ]
+                },
+                "callback": {
+                    "description": "JSONP Callback.  For use with JSONP and GEOJSONP output only.  Enter a name of the function in which to wrap the JSON response.",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

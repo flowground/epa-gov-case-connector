@@ -1,0 +1,51 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "output": {
+                    "description": "Output Format Flag.  Enter one of the following keywords:\n- JSON = Data model formatted as Javascript Object Notation (default).\n- JSONP = Data model formatted as Javascript Object Notation with Padding.  \n- XML = Data model formatted as Extensible Markup Language.",
+                    "type": "string",
+                    "enum": [
+                        "JSONP",
+                        "JSON",
+                        "XML"
+                    ]
+                },
+                "qid": {
+                    "description": "Query ID Selector.  Enter the QueryID number from a previously run query.",
+                    "type": "string"
+                },
+                "callback": {
+                    "description": "JSONP Callback.  For use with JSONP and GEOJSONP output only.  Enter a name of the function in which to wrap the JSON response.",
+                    "type": "string"
+                },
+                "tablelist": {
+                    "description": "Table List Flag. Enter a Y to display the first page of facility results.",
+                    "type": "string",
+                    "enum": [
+                        "Y",
+                        "N"
+                    ]
+                },
+                "c1_lat": {
+                    "description": "Latitude of 1st corner of box that bounds the resulting facilities. The latitude and longitude of both corners of the bounding box must be provided.",
+                    "type": "number"
+                },
+                "c1_long": {
+                    "description": "Longitude of 1st corner of box that bounds the resulting facilities. The latitude and longitude of both corners of the bounding box must be provided.",
+                    "type": "number"
+                },
+                "c2_lat": {
+                    "description": "Latitude of 2nd corner of box that bounds the resulting facilities. The latitude and longitude of both corners of the bounding box must be provided.",
+                    "type": "number"
+                },
+                "c2_long": {
+                    "description": "Longitude of 2nd corner of box that bounds the resulting facilities. The latitude and longitude of both corners of the bounding box must be provided.",
+                    "type": "number"
+                }
+            }
+        }
+    }
+}

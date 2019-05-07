@@ -1,0 +1,406 @@
+{
+    "type": "object",
+    "properties": {
+        "output": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "JSONP",
+                "JSON",
+                "XML"
+            ]
+        },
+        "p_case_category": {
+            "required": false,
+            "type": "string"
+        },
+        "p_case_status": {
+            "required": false,
+            "type": "string"
+        },
+        "p_milestone": {
+            "required": false,
+            "type": "string"
+        },
+        "p_from_date": {
+            "required": false,
+            "type": "string"
+        },
+        "p_to_date": {
+            "required": false,
+            "type": "string"
+        },
+        "p_milestone_fy": {
+            "required": false,
+            "type": "string"
+        },
+        "p_name": {
+            "required": false,
+            "type": "string"
+        },
+        "p_name_type": {
+            "required": false,
+            "type": "string"
+        },
+        "p_case_number": {
+            "required": false,
+            "type": "string"
+        },
+        "p_docket_number": {
+            "required": false,
+            "type": "string"
+        },
+        "p_activity_number": {
+            "required": false,
+            "type": "string"
+        },
+        "p_case_lead": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "E",
+                "S"
+            ]
+        },
+        "p_case_sens_flg": {
+            "required": false,
+            "type": "string"
+        },
+        "p_region": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10"
+            ]
+        },
+        "p_state": {
+            "required": false,
+            "type": "string"
+        },
+        "p_district": {
+            "required": false,
+            "type": "string"
+        },
+        "p_sic": {
+            "required": false,
+            "type": "string"
+        },
+        "p_sic_ao_naics": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "AND",
+                "OR"
+            ]
+        },
+        "p_sic_primary_flg": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "Y",
+                "N"
+            ]
+        },
+        "p_sic_frs_flg": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "Y",
+                "N"
+            ]
+        },
+        "p_naics": {
+            "required": false,
+            "type": "string"
+        },
+        "p_naics_primary_flg": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "Y",
+                "N"
+            ]
+        },
+        "p_naics_frs_flg": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "Y",
+                "N"
+            ]
+        },
+        "p_enf_type": {
+            "required": false,
+            "type": "string"
+        },
+        "p_law": {
+            "required": false,
+            "type": "string"
+        },
+        "p_section": {
+            "required": false,
+            "type": "string"
+        },
+        "p_cp_citation": {
+            "required": false,
+            "type": "string"
+        },
+        "p_rank_order": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "1",
+                "0"
+            ]
+        },
+        "p_enf_program": {
+            "required": false,
+            "type": "string"
+        },
+        "p_violation": {
+            "required": false,
+            "type": "string"
+        },
+        "p_priority_area": {
+            "required": false,
+            "type": "string"
+        },
+        "p_priority_area_desc": {
+            "required": false,
+            "type": "string"
+        },
+        "p_tribal": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "Y",
+                "N"
+            ]
+        },
+        "p_oeca_core": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "Y",
+                "N"
+            ]
+        },
+        "p_multimedia": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "Y",
+                "N"
+            ]
+        },
+        "p_fed_case": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "Y",
+                "N"
+            ]
+        },
+        "p_activity_contact": {
+            "required": false,
+            "type": "string"
+        },
+        "p_role": {
+            "required": false,
+            "type": "string"
+        },
+        "p_fed_penalty": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "ANY",
+                "LE5000",
+                "GT5000",
+                "GT50000",
+                "GT100000",
+                "GT500000",
+                "GT1000000",
+                "GT2500000"
+            ]
+        },
+        "p_total_fed_penalty": {
+            "required": false,
+            "type": "string"
+        },
+        "p_cost_recovery": {
+            "required": false,
+            "type": "string"
+        },
+        "p_total_cost_recovery": {
+            "required": false,
+            "type": "string"
+        },
+        "p_complying_actions": {
+            "required": false,
+            "type": "string"
+        },
+        "p_comp_act_val": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "ANY",
+                "LE5000",
+                "GT5000",
+                "GT100000",
+                "GT1000000",
+                "GT50000000"
+            ]
+        },
+        "p_total_comp_act_val": {
+            "required": false,
+            "type": "string"
+        },
+        "p_sep_cats": {
+            "required": false,
+            "type": "string"
+        },
+        "p_sep_val": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "ANY",
+                "LE10000",
+                "GT10000",
+                "GT50000",
+                "GT100000",
+                "GT500000",
+                "GT1000000"
+            ]
+        },
+        "p_total_sep_val": {
+            "required": false,
+            "type": "string"
+        },
+        "p_lodged_date": {
+            "required": false,
+            "type": "string"
+        },
+        "p_entered_date": {
+            "required": false,
+            "type": "string"
+        },
+        "p_facility_id": {
+            "required": false,
+            "type": "string"
+        },
+        "p_fac_city": {
+            "required": false,
+            "type": "string"
+        },
+        "p_fac_zip": {
+            "required": false,
+            "type": "string"
+        },
+        "p_fac_county": {
+            "required": false,
+            "type": "string"
+        },
+        "p_case_summary": {
+            "required": false,
+            "type": "string"
+        },
+        "p_case_summary_type": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "ALL",
+                "CONTAINS",
+                "WITHIN"
+            ]
+        },
+        "p_usmex": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "Y",
+                "N"
+            ]
+        },
+        "p_c1lat": {
+            "required": false,
+            "type": "number"
+        },
+        "p_c1lon": {
+            "required": false,
+            "type": "number"
+        },
+        "p_c2lat": {
+            "required": false,
+            "type": "number"
+        },
+        "p_c2lon": {
+            "required": false,
+            "type": "number"
+        },
+        "p_voluntary": {
+            "required": false,
+            "type": "string"
+        },
+        "p_fed_indicator": {
+            "required": false,
+            "type": "string"
+        },
+        "p_fntype": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "ALL",
+                "CONTAINS",
+                "EXACT",
+                "BEGINS"
+            ]
+        },
+        "p_civil_criminal_indicator": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "CI",
+                "CR",
+                "ALL"
+            ]
+        },
+        "queryset": {
+            "required": false,
+            "type": "number"
+        },
+        "responseset": {
+            "required": false,
+            "type": "number"
+        },
+        "mapset": {
+            "required": false,
+            "type": "string",
+            "default": "1400"
+        },
+        "callback": {
+            "required": false,
+            "type": "string"
+        },
+        "qcolumns": {
+            "required": false,
+            "type": "string"
+        },
+        "p_pretty_print": {
+            "required": false,
+            "type": "number"
+        },
+        "p_ocmap_fy": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}
